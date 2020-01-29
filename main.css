@@ -1,0 +1,116 @@
+/*
+.profile-card{
+  background-color: hsla(60, 100%, 50%, .4);
+}
+.head{
+  background-color: hsla(120, 100%, 50%, .4);
+}
+.content{
+  background-color: hsla(120, 100%, 50%, .4);
+}
+.profile-image{
+  background-color: hsla(300, 100%, 50%, .4);
+}
+.name-headline{
+  background-color: hsla(300, 100%, 50%, .4);
+}
+.about{
+  background-color: hsla(300, 100%, 50%, .4);
+}
+.links{
+  background-color: hsla(300, 100%, 50%, .4);
+}
+÷/
+
+/* Resetare CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Poziționarea */
+
+.profile-card {
+  width: 480px;
+  max-width: calc(100vw - 10px);
+  margin-top: 50px;
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+.head, .links {
+  text-align: center;
+}
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.profile-image {
+  margin-top: -60px;
+}
+.head, .about {
+  margin-bottom: 10%;
+}
+.content {
+  padding: 5% 10%;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+.button {
+  background:#3D94F6;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Open Sans;
+  font-size: 15px;
+  padding: 3px 6px;
+  box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337FED 1px;
+  text-decoration: underline;
+  display: inline-block;
+  cursor: pointer;
+  position:relative;
+  top: -8px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('assets/QztlVTN.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 1px;
+  background-color: #666;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(50%);
+}
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+a:hover {
+  color: #b60e63;}
+
+/* Linkurile de contact */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .head, .about {
+  margin-bottom: 5%;
+}
+}
